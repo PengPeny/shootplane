@@ -1,2 +1,2 @@
-public class Bullet {
+public class Bullet extends FlyingObject{
 }

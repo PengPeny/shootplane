@@ -1,2 +1,2 @@
-public class Hero {
+public class Hero extends FlyingObject{
 }
