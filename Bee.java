@@ -17,6 +17,20 @@ public class Bee extends FlyingObject implements Award{
     public int getType(){
         return awardType;
     }
+    public boolean outOfBounds(){
+        return y >Shootplane.HEIGHT;
+    }
+
+    public void step(){
+        x += xSpeed;
+        y += ySpeed;
+        if (x > Shootplane.WIDTH - width){
+            xSpeed = -1;
+        }
+        if (x<0){
+            xSpeed = 1;
+        }
+    }
 
 
 }
